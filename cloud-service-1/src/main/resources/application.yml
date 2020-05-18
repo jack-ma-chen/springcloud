@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: cloud-service-client-1
+
+server:
+  port: 8001
+
+eureka:
+  client:
+    healthcheck:
+      enabled: false
+    serviceUrl:
+      defaultZone: http://localhost:8000/eureka/
