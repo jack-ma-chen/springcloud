@@ -1,4 +1,19 @@
 spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      master:
+          driver-class-name: com.mysql.jdbc.Driver
+            username: root
+            password: syh123
+            url: jdbc:mysql://localhost:3306/datasource01?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+            #主数据源
+      slave:
+          driver-class-name:  com.mysql.jdbc.Driver
+          username:  root
+          password:  syh123
+          url: jdbc:mysql://localhost:3306/datasource02?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+       #从数据源
   application:
     name: cloud-service-client-1
 
@@ -11,3 +26,6 @@ eureka:
       enabled: false
     serviceUrl:
       defaultZone: http://localhost:8000/eureka/
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.hoje.cloud.springcloud.service1.entity

@@ -26,6 +26,7 @@
         <module>cloud-zuul-getway</module>
         <module>cloud-service-1</module>
         <module>cloud-service-2</module>
+        <module>cloud-elasticsearch</module>
     </modules>
 
     <dependencyManagement>
@@ -39,6 +40,15 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
 
     <repositories>
         <repository>

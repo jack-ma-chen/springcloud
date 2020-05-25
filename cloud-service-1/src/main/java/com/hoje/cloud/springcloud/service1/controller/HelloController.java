@@ -39,4 +39,6 @@ public class HelloController {
     public String hello (@RequestBody User user) {
         return "Hello "+ user. getName () + ", " + user. getAge ();
     }
+
+
 }
