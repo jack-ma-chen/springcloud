@@ -27,6 +27,7 @@
         <module>cloud-service-1</module>
         <module>cloud-service-2</module>
         <module>cloud-elasticsearch</module>
+        <module>cloud-redis</module>
     </modules>
 
     <dependencyManagement>
